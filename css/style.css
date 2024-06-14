@@ -1,0 +1,693 @@
+/* css stylesheet */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Public Sans';
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+}
+
+p {
+  color: #9698A6;
+}
+
+ul, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-menu ul li {
+  display: inline-block;
+}
+
+.header-menu ul li a {
+  color: #9698A6;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 30px 20px;
+  transition: 0.5s ease;
+  position: relative;
+}
+
+.req-btn a {
+  background-image: linear-gradient(50deg, hsl(143, 62%, 50%), hsl(186, 65%, 48%));
+  text-transform: capitalize;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.req-btn a:hover {
+  opacity: 0.7;
+}
+
+.header-outer {
+  box-shadow: 5px 5px 10px #ded8d87d;
+  z-index: 9999;
+  position: relative;
+  background-color: #fff;
+}
+
+.slider-inner {
+  display: flex;
+}
+
+.slider {
+  padding-left: 170px;
+  background-image: url(../images/bg-intro-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 690px -260px;
+  height: 800px;
+}
+
+.slider-image {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+
+.slider-content {
+  flex-basis: 40%;
+  padding: 130px 0;
+}
+
+.slider-content h1 {
+  font-size: 40px;
+}
+
+.slider-content p {
+  padding-bottom: 20px;
+}
+
+.slider-content h1 {
+  font-size: 55px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.easybank-title h2 {
+  font-weight: 400;
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+.easybank-content h2 {
+  font-weight: 400;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.easybank-image {
+  padding-bottom: 40px;
+}
+
+.easybank-title {
+  margin-bottom: 80px;
+}
+
+.easybank-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.easybank-box {
+  flex-basis: 23%;
+}
+
+.article-title h2 {
+  font-weight: 400;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.article-content span {
+  font-size: 14px;
+  color: #9698A6;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.article-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.article-box {
+  flex: 20%;
+  box-shadow: 4px 6.928px 14px 1px #e2dede;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.article-image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.article-image {
+  height: 210px;
+  overflow: hidden;
+}
+
+.article-image:hover img {
+  -webkit-transform: rotate(12deg) scale(1.3);
+  transform: rotate(12deg) scale(1.3);
+}
+
+.easybank-outer {
+  background-color: #f4f5f7;
+  margin-bottom: 100px;
+}
+
+/* || footer */
+
+footer.footer-outer {
+  background-color: #2D314D;
+}
+
+.article-outer {
+  margin-bottom: 100px;
+}
+
+.footer-boxes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.socialmedia-outer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.footer-box li a {
+  color: #fff;
+  text-transform: capitalize;
+  display: inline-block;
+  padding-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+.footer-logo {
+  padding-bottom: 30px;
+}
+
+.footer-box .req-btn {
+  padding-bottom: 30px;
+}
+
+.footer-box .req-btn {
+  padding-bottom: 30px;
+  text-align: end;
+}
+
+.article-content h3 {
+  font-weight: 400;
+  line-height: 1.3;
+  padding-bottom: 15px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.article-content p {
+  font-size: 16px;
+}
+
+.article-content {
+  padding: 30px 25px;
+}
+
+.easybank-inner {
+  padding: 100px 0;
+}
+
+.article-content h3:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.footer-box li a:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.social-icons a:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.header-menu ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(50deg, hsl(143, 62%, 50%), hsl(186, 65%, 48%));
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.header-menu ul li a:hover::before {
+  opacity: 1;
+}
+
+.footer-box li a:focus {
+  color: hsl(136, 65%, 51%);
+}
+
+.social-icons a:focus {
+  color: hsl(136, 65%, 51%);
+}
+
+.header-menu ul li a:focus::before {
+  opacity: 1;
+}
+
+/* navbar */
+
+#check-btn, #cancel {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+  /* navbar */
+  #check-btn {
+      display: block;
+  }
+
+  .header-outer .req-btn {
+      display: none;
+  }
+
+  .header-menu ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      left: -100%;
+      top: 70px;
+      text-align: center;
+      transition: 0.5s ease;
+  }
+
+  .header-menu ul li {
+      display: block;
+  }
+
+  #check:checked~ul {
+      left: 0;
+  }
+
+  #check:checked~label #check-btn {
+      display: none;
+  }
+
+  #check:checked~label #cancel {
+      display: block;
+  }
+
+  /* header */
+  .container {
+      padding: 0 30px;
+  }
+
+  .header-outer .container {
+      padding: 20px 30px;
+  }
+
+  .header-outer {
+      position: fixed;
+      width: 100%;
+  }
+
+  .header-menu ul li a {
+      display: block;
+  }
+
+  /* slider */
+  .slider {
+      position: relative;
+      background-image: none;
+      padding: 0 30px;
+      height: auto;
+  }
+
+  .slider-image {
+      display: none;
+  }
+
+  .slider {
+      position: relative;
+      background-image: none;
+      padding: 120px 30px 50px;
+      height: auto;
+  }
+
+  .slider-content {
+      flex-basis: 100%;
+      padding: 0;
+      text-align: center;
+  }
+
+  .slider-content h1 {
+      font-size: 50px;
+  }
+
+  /* easybank */
+  .easybank-title {
+      text-align: center;
+  }
+
+  br {
+      display: none;
+  }
+
+  .easybank-box {
+      flex-basis: 100%;
+      text-align: center;
+  }
+
+  .easybank-boxes {
+      gap: 50px;
+  }
+
+  /* article */
+  .article-title {
+      text-align: center;
+  }
+
+  .article-boxes {
+      gap: 100px;
+  }
+
+  .article-box {
+      flex-basis: 100%;
+  }
+
+  .article-image:hover img {
+      transform: initial;
+  }
+
+  .article-image {
+      height: 300px;
+  }
+
+  .article-content {
+      padding: 30px 30px;
+  }
+
+  /* footer */
+  .footer-box {
+      flex-basis: 100%;
+      text-align: center;
+  }
+
+  .socialmedia-outer {
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
+  }
+
+  .footer-box .req-btn {
+      text-align: center;
+      padding-top: 50px;
+  }
+
+  .social-icons a {
+      font-size: 30px;
+  }
+
+  .footer-boxes {
+      padding: 50px 0 15px;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* header */
+  .header-logo img {
+      padding-top: 10px;
+  }
+
+  .header-inner {
+      justify-content: center;
+  }
+
+  .container {
+      padding: 0 30px;
+  }
+
+  .header-outer {
+      padding: 20px 0;
+  }
+
+  .header-menu ul li a::before {
+      content: none;
+  }
+
+  /* slider */
+  .slider {
+      position: relative;
+      background-image: none;
+      padding: 0 30px;
+      height: auto;
+  }
+
+  .slider-image {
+      display: none;
+  }
+
+  .slider-content {
+      flex-basis: 100%;
+      padding: 90px 0;
+      text-align: center;
+  }
+
+  /* easybank */
+  .easybank-title {
+      text-align: center;
+  }
+
+  br {
+      display: none;
+  }
+
+  .easybank-box {
+      flex-basis: 100%;
+      text-align: center;
+  }
+
+  .easybank-boxes {
+      gap: 50px;
+  }
+
+  /* article */
+  .article-title {
+      text-align: center;
+  }
+
+  .article-boxes {
+      gap: 20px;
+  }
+
+  .article-box {
+      flex-basis: 40%;
+      margin-bottom: 20px;
+  }
+
+  .article-image {
+      height: 300px;
+  }
+
+  .article-content {
+      padding: 30px 20px;
+  }
+
+  .article-outer {
+      margin-bottom: 50px;
+  }
+
+  /* footer */
+  .footer-box {
+      flex-basis: 100%;
+      text-align: center;
+  }
+
+  .socialmedia-outer {
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 50px;
+  }
+
+  .footer-box .req-btn {
+      text-align: center;
+      padding-top: 50px;
+  }
+
+  .social-icons a {
+      font-size: 30px;
+  }
+
+  .footer-boxes {
+      padding: 50px 0 15px;
+  }
+}
+
+/* // Apply styles starting from medium devices and up to extra large devices */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+  /* header */
+  .container {
+      padding: 0 30px;
+  }
+
+  .header-logo img {
+      padding-top: 10px;
+  }
+
+  .header-menu ul li a {
+      font-size: 16px;
+      padding: 30px 10px;
+  }
+
+  /* slider */
+  .slider-image {
+      display: none;
+  }
+
+  .slider-content {
+      flex-basis: 100%;
+      padding: 90px 0;
+      text-align: center;
+  }
+
+  .slider {
+      position: relative;
+      background-image: none;
+      padding: 0 30px;
+      height: auto;
+  }
+
+  .slider-image {
+      display: none;
+  }
+
+  .slider-content {
+      flex-basis: 100%;
+      padding: 90px 0;
+      text-align: center;
+  }
+
+  .slider-content p {
+      padding: 0 20px 20px;
+  }
+
+  /* easybank */
+  .easybank-title {
+      text-align: center;
+  }
+
+  br {
+      display: none;
+  }
+
+  .easybank-box {
+      flex-basis: 45%;
+      text-align: center;
+  }
+
+  .easybank-boxes {
+      gap: 50px;
+  }
+
+  /* article */
+  .article-title {
+      text-align: center;
+  }
+
+  .article-boxes {
+      gap: 30px;
+  }
+
+  .article-box {
+      flex-basis: 40%;
+      margin-bottom: 20px;
+  }
+
+  .article-image {
+      height: 300px;
+  }
+
+  .article-content {
+      padding: 30px 30px;
+  }
+
+  .article-outer {
+      margin-bottom: 50px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+  .container {
+      padding: 0 40px;
+  }
+
+  .slider-image img {
+      width: 600px;
+  }
+
+  .slider-content {
+      z-index: 9999;
+  }
+}
